@@ -1,0 +1,10 @@
+<shared-list
+  [headers]="headers"
+  (deleteEntity)="deleteAnimal($event)"
+></shared-list>
+<shared-list
+  [headers]="headers"
+  (deleteEntity)="deleteAnimal($event)"
+  (searchEntity)="searchAnimal($event)"
+  (limitEntity)="limitAnimal($event)"
+></shared-list>
