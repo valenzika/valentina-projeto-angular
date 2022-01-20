@@ -5,7 +5,6 @@
     <input type="text" [formControlName]="value" [id]="value" />
     <br />
   </div>
-
-  <button type="button" (click)="clickOnSubmit()">Submit</button>
-  <button type="button" (click)="goBack()">Cancel</button>
+  <button mat-raised-button color="accent" (click)="clickOnSubmit()">Submit</button>
+  <button mat-raised-button color="warn" (click)="goBack()">Cancel</button>
 </form>

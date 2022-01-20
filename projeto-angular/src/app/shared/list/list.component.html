@@ -1,7 +1,7 @@
 <div>
   <input type="text" [(ngModel)]="inputValue" (keyup.enter)="search()" />
-  <button (click)="goToAdd()">Add</button>
-  <button (click)="toLimit()">Limit to 3</button>
+  <button mat-raised-button color="primary"(click)="goToAdd()">Add</button>
+  <button mat-raised-button color="primary"(click)="toLimit()">Limit to 3</button>
 </div>
 
 <table>
@@ -11,12 +11,17 @@
     </th>
   </tr>
 
+  <tr mat-header-row *ngFor="let header of headers">
+
+  </tr>
+  <tr mat-row *ngFor="let row; columns: displayedColumns;"></tr>
+
   <tr *ngFor="let entity of entities">
+
     <td *ngFor="let key of keys">{{ entity[key] }}</td>
     <td>
-      <button (click)="editEntity(entity.id)">Edit</button>
-      <button (click)="onDeleteEntity(entity.id)">Delete</button>
+      <button mat-raised-button color="accent"(click)="editEntity(entity.id)">Edit</button>
+      <button mat-raised-button color="warn" (click)="onDeleteEntity(entity.id)">Delete</button>
     </td>
   </tr>
 </table>
-

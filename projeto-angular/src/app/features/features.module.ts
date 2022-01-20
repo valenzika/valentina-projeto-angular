@@ -5,13 +5,12 @@ import { FormComponent } from './animal/form/form.component';
 import { AnimalRoutingModule } from './animal/animal-routing.module';
 import { ReactiveFormsModule } from '@angular/forms';
 import { SharedModule } from '../shared/shared.module';
+import { FeaturesRoutingModule } from './features-routing.module';
 
 
 @NgModule({
   declarations: [],
-  imports: [CommonModule,AnimalRoutingModule,ReactiveFormsModule,
-SharedModule
-  ],
+  imports: [CommonModule,FeaturesRoutingModule,ReactiveFormsModule],
   exports: [],
 })
 export class FeaturesModule { }

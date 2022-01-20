@@ -7,11 +7,11 @@ import { PageNotFoundComponent } from '../core/page-not-found/page-not-found.com
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'people',
+    redirectTo: 'animal',
     pathMatch: 'full',
   },
   {
-    path: 'people',
+    path: 'animal',
     loadChildren: async() =>
     import('./animal/animal.module').then((m) => m.AnimalModule),
   },

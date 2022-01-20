@@ -1,0 +1,52 @@
+section {
+  background-image: -moz-repeating-linear-gradient();
+  text-align: center;
+  display: table;
+}
+
+.example-label {
+  background-image: -moz-repeating-linear-gradient();
+  text-align: center;
+  display: table-cell;
+  font-size: 14px;
+  margin-left: 8px;
+  min-width: 120px;
+}
+
+.example-button-row {
+  display: table-cell;
+  width: 490px;
+}
+
+.example-button-row .mat-button-base {
+  margin: 8px 8px 8px 0;
+}
+
+.example-flex-container {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.example-button-container {
+  display: flex;
+  justify-content: center;
+  width: 120px;
+}
+table {
+  background-image: -moz-repeating-linear-gradient();
+  text-align: center;
+  width: 50%;
+  margin-top: 50px;
+}
+body{
+  background-image: -moz-repeating-linear-gradient();
+  width: 400px;
+  height: 150px;
+  left: 50%;
+  margin: -130px 0 0 -210px;
+  padding:10px;
+  position: absolute;
+  top: 50%;
+}
